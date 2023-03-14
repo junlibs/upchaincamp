@@ -13,7 +13,9 @@ async function main() {
 
   await counter.count();
 
-  console.log(`Please verify: npx hardhat verify ${counter.address}`);
+  console.log(
+    `Please verify: npx hardhat verify ${counter.address} on ${network.name}`
+  );
 }
 
 main()
